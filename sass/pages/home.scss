@@ -1,0 +1,40 @@
+.container00 {
+   &.container01 {
+      @include background-container(url("../../img/home/01.jpg"));
+   }
+
+   &.container02 {
+      @include background-container(url("../../img/home/03.jpg"));
+   }
+
+   &.container03 {
+      @include background-container(url("../../img/home/02.gif"));
+   }
+
+   &.container04 {
+      @include background-container(url("../../img/home/04.jpg"));
+   }
+}
+
+.shortTitle {
+   max-width: 550px;
+}
+
+.mediumTitle {
+   max-width: 700px;
+}
+
+@media screen and (max-width: 750px) {
+   .shortTitle,
+   .mediumTitle {
+      font-size: 50px;
+      width: auto;
+   }
+}
+
+@media screen and (max-width: 450px) {
+   .shortTitle,
+   .mediumTitle {
+      font-size: 30px;
+   }
+}

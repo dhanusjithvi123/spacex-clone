@@ -1,0 +1,144 @@
+.container00 {
+   &.container08 {
+      @include background-container(url("../../img/humanFlight/01.jpg"));
+   }
+
+   &.container09 {
+      @include background-container(url("../../img/humanFlight/02.jpg"));
+   }
+
+   &.container10 {
+      @include background-container(url("../../img/humanFlight/03.jpg"));
+   }
+
+   &.container11 {
+      @include background-container(url("../../img/humanFlight/04.jpg"));
+   }
+
+   &.container12 {
+      @include background-container(url("../../img/humanFlight/05.jpg"));
+   }
+}
+
+.titleHuman {
+   font-size: 120px;
+}
+
+.subtitleHuman {
+   font-size: 30px;
+   font-weight: 300;
+   padding: $padding-default;
+}
+
+.containerDesc {
+   background-color: black;
+   min-height: 20vh;
+
+   .containerText {
+      color: $table-item;
+      font-size: 20px;
+      max-width: 60%;
+      margin: 0 auto;
+      padding: $padding-default;
+   }
+}
+
+.titleSection {
+   font-size: 60px;
+   font-weight: bold;
+}
+
+.subtitleSection {
+   font-weight: 300;
+   margin-bottom: 40px;
+}
+
+.right {
+   padding-top: 15%;
+   margin-left: 55%;
+}
+
+.left {
+   padding-top: 15%;
+   margin-left: 5%;
+}
+
+@media (max-width: 1024px) {
+   .titleHuman {
+      font-size: 90px;
+   }
+
+   .subtitleHuman {
+      margin: 20px 0px;
+      font-size: 30px;
+      font-weight: 300;
+   }
+
+   .containerDesc {
+      .containerText {
+         margin: -50px auto;
+      }
+   }
+
+   .right {
+      margin-left: 50%;
+      padding-top: 20%;
+   }
+
+   .left {
+      margin-left: 5%;
+      padding-top: 20%;
+   }
+
+   .titleSection {
+      font-size: 50px;
+      font-weight: bold;
+   }
+
+   .subtitleSection {
+      font-weight: 300;
+      margin-bottom: 40px;
+   }
+}
+
+@media (max-width: 450px) {
+   .titleHuman {
+      font-size: 40px;
+   }
+
+   .subtitleHuman {
+      font-size: 16px;
+   }
+
+   .arrowDown {
+      display: none;
+   }
+
+   .containerDesc {
+      .containerText {
+         color: $table-item;
+         font-size: 14px;
+         font-weight: 400;
+      }
+   }
+
+   .right {
+      margin-left: 20%;
+      padding-top: 30%;
+   }
+
+   .left {
+      margin-left: 7%;
+      padding-top: 30%;
+   }
+
+   .titleSection {
+      font-size: 50px;
+      font-weight: bold;
+   }
+
+   .subtitleSection {
+      font-weight: 300;
+      margin-bottom: 40px;
+   }
+}

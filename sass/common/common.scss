@@ -1,0 +1,102 @@
+@mixin background-container($background-image) {
+   background-image: $background-image;
+}
+
+.container00 {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+}
+
+.header {
+   font-size: 12px;
+   font-weight: bold;
+
+   #navItem {
+      &:hover {
+         color: $link-hover;
+      }
+   }
+}
+
+.navLogo {
+   margin-left: -10px;
+   margin-right: 20px;
+   width: 240px;
+}
+
+#button {
+   padding: $padding-button;
+   border: 2px solid white;
+}
+
+.arrowDown {
+   display: inline-block;
+   width: 90px;
+   margin-top: 5px;
+}
+
+.titleContent {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   min-height: 80vh;
+}
+
+.titlePadding {
+   padding-top: 120px;
+}
+
+.info {
+   background-color: black;
+   height: 85vh;
+   padding-top: 240px;
+}
+
+.footer {
+   align-items: center;
+   background-color: black;
+   display: flex;
+   font-size: 12px;
+   font-weight: 500;
+   height: 15vh;
+   justify-content: center;
+
+   & a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+         color: $link-hover;
+      }
+   }
+}
+
+.copyOBC {
+   color: $copyright;
+}
+
+// Media Query
+
+@media screen and (max-width: 450px) {
+   .navLogo {
+      margin-top: 15px;
+      width: 180px;
+   }
+
+   .footer {
+      font-size: 10px;
+   }
+
+   .titlePadding {
+      padding-top: 120px;
+   }
+}
+
+@media screen and (max-width: 350px) {
+   .navLogo {
+      margin-top: 15px;
+      width: 150px;
+   }
+}

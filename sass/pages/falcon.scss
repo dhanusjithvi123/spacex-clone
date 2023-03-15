@@ -1,0 +1,177 @@
+.container00 {
+   &.container05 {
+      @include background-container(url("../../img/falcon9/01.jpg"));
+   }
+
+   &.container06 {
+      @include background-container(url("../../img/falcon9/02.jpg"));
+   }
+
+   &.container07 {
+      @include background-container(url("../../img/falcon9/08.jpg"));
+   }
+
+   &.carousel01 {
+      @include background-container(url("../../img/falcon9/03.jpg"));
+   }
+
+   &.carousel02 {
+      @include background-container(url("../../img/falcon9/04.jpg"));
+   }
+
+   &.carousel03 {
+      @include background-container(url("../../img/falcon9/05.jpg"));
+   }
+
+   &.carousel04 {
+      @include background-container(url("../../img/falcon9/06.jpg"));
+   }
+
+   &.carousel05 {
+      @include background-container(url("../../img/falcon9/07.jpg"));
+   }
+}
+
+.titleFalcon {
+   font-family: "Rubik", sans-serif;
+   font-size: 90px;
+   font-weight: 514;
+}
+
+.numbers {
+   background-color: black;
+   min-height: 40vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   .titleNumb {
+      font-size: 90px;
+   }
+
+   .subtitleNumb {
+      margin-top: -30px;
+      font-size: 20px;
+   }
+}
+
+.containerFalconDesc {
+   display: grid;
+   height: 90vh;
+   text-align: left;
+}
+
+.falconDesc {
+   font-size: 22px;
+   line-height: 50px;
+   max-width: 50%;
+}
+
+.overviewPosition {
+   margin-left: 15%;
+   padding-top: 15%;
+   max-width: 70%;
+
+   .overviewSubtitle {
+      font-size: 20px;
+      font-weight: 300;
+   }
+
+   .overviewTitle {
+      font-size: 26px;
+      font-weight: bold;
+   }
+}
+
+#widthTable {
+   max-width: 500px;
+}
+
+.carouselDesc {
+   background-color: black;
+}
+
+@media screen and (max-width: 1024px) {
+   .titleFalcon {
+      font-size: 70px;
+   }
+
+   .numbers {
+      .titleNumb {
+         font-size: 70px;
+      }
+
+      .subtitleNumb {
+         font-size: 18px;
+         margin: $padding-default;
+      }
+   }
+
+   .overviewPosition {
+      padding-top: 20%;
+   }
+
+   .containerFalconDesc {
+      text-align: center;
+   }
+
+   .falconDesc {
+      margin: 0 auto;
+      max-width: 70%;
+   }
+}
+
+@media screen and (max-width: 750px) {
+   .falconDesc {
+      max-width: 90%;
+   }
+
+   .overviewPosition {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+      width: auto;
+   }
+
+   #widthTable {
+      max-width: 80%;
+   }
+}
+
+@media screen and (max-width: 450px) {
+   .titleFalcon {
+      font-size: 50px;
+   }
+
+   .numbers {
+      .titleNumb {
+         font-size: 30px;
+      }
+
+      .subtitleNumb {
+         font-size: 12px;
+         margin: $padding-default;
+      }
+   }
+
+   .falconDesc {
+      font-size: 18px;
+      line-height: 35px;
+   }
+
+   .overviewPosition {
+      height: 90vh;
+      max-width: 100%;
+      text-align: center;
+
+      .overviewSubtitle {
+         font-size: 12px;
+      }
+
+      .overviewTitle {
+         font-size: 22px;
+      }
+   }
+}
